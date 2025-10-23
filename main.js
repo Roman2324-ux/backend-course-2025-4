@@ -38,7 +38,7 @@ try {
       }
       const banksForXml = filteredBanks.map(bank => {
         const bankRecord = {
-          name: bank.NAME,
+          name: bank.SHORTNAME,
           state_code: bank.COD_STATE,
         };
         if (queryParams.get('mfo') === 'true') {
